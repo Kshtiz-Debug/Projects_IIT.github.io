@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+</head>
+<body>
+<h1><b>Student Details</b></h1>
+<table border="2">
+    <tr>
+        <th>Student Id</th>
+        <th>Course Id</th>
+        <th>Marks</th>
+    </tr>
+    {% for row in students %}
+    <tr>
+        <td>{{row["Student id"]}}</td>
+        <td>{{row["Course id"]}}</td>
+        <td>{{row["Marks"]}}</td>
+    </tr>
+    {% endfor %}
+
+
+    <tr>
+        <td colspan="2" align="center">Total Marks:</td>
+        <td>{{total}}</td>
+    </tr>
+
+
+</table>
+
+
+<a href="/">Go Back</a>
+
+</body>
+</html>
